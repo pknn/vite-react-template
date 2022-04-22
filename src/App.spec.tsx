@@ -1,4 +1,5 @@
 import { shallow } from 'enzyme'
+import { describe, it, expect } from 'vitest'
 import App from './App'
 
 const getShallowMounted = () => shallow(<App />)
