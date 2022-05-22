@@ -1,14 +1,12 @@
-import { shallow } from 'enzyme'
 import { describe, it, expect } from 'vitest'
+import { render } from '@testing-library/react'
 import App from './App'
 
-const getShallowMounted = () => shallow(<App />)
-
 describe('<App />', () => {
-  it('should render correctly', () => {
-    const component = getShallowMounted()
+  it('should render correctly', async () => {
+    const { container, getByText } = render(<App />)
 
-    expect(component).toMatchSnapshot()
-    expect(component.text()).toBe('Vite React App')
+    expect(container).toMatchSnapshot()
+    expect(getByText('Vite React App')).toBeInTheDocument()
   })
 })

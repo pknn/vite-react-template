@@ -1,3 +1,9 @@
 // Vitest Snapshot v1
 
-exports[`<App /> > should render correctly 1`] = `ShallowWrapper {}`;
+exports[`<App /> > should render correctly 1`] = `
+<div>
+  <div>
+    Vite React App
+  </div>
+</div>
+`;
