@@ -7,6 +7,6 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'jsdom',
-    setupFiles: './src/testUtils/vitest.setup.ts',
+    setupFiles: './testUtils/vitest.setup.ts',
   },
 })
